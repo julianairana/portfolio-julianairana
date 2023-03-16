@@ -5,9 +5,11 @@ export const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing:border-box;
+    font-family: 'Sono', sans-serif;
+    font-weight: 400;
 }
 ul, ol, li{
-    list-style-type: style none;
+    list-style-type: none;
 }
 a{
     text-decoration:none;

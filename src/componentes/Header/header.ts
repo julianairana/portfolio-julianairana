@@ -6,8 +6,8 @@ export const ContainerHeader = styled.div`
     width: 100%;
     height: 70px;
     justify-content: space-evenly;
-    border-bottom: 1px solid #979797;
-    
+    /* border-bottom: 1px solid #979797; */
+    box-shadow: 0px 4px 32px -12px #979797;
 
     a {
         color: #979797;
@@ -15,6 +15,7 @@ export const ContainerHeader = styled.div`
     }
 
     a:hover{
-        color: #ffff;
+        /* color: #ffff; */
+        color: #A7F0BA;
     }
 `
