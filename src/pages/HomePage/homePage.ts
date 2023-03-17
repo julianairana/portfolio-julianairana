@@ -45,7 +45,7 @@ export const ContainerHome = styled.div`
         display: flex;
         justify-content: center;
         width: 100%;
-        height: 100vh;
+        /* height: 100vh; */
         align-items: center;
         flex-wrap: nowrap;
        
@@ -53,7 +53,7 @@ export const ContainerHome = styled.div`
         .divImg {
             width: 100%;
             max-width: 50%;
-            height: 90%;
+            /* height: 90%; */
             max-height: 100%;
             display: flex;
         }
