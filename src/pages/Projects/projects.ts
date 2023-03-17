@@ -10,6 +10,8 @@ export const ContainerProjects = styled.div`
 
     h1 {
         color:#A7F0BA;
+        width: 70%;
+        text-align: center;
     }
 
     .divProjects {

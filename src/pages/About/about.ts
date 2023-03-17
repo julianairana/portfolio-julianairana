@@ -23,6 +23,8 @@ export const ContainerAbout = styled.div`
 
     h1 {
         color:#A7F0BA;
+        width: 70%;
+        text-align: center;
     }
 
     h3 {
@@ -42,6 +44,28 @@ export const ContainerAbout = styled.div`
         margin-top: 20px;
         color: #ffff;
         text-align: center;
+    }
+
+    .divIcons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+    }
+
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+    .imgIcons {
+        width: 70px;
+        height: 70px;
     }
 
 

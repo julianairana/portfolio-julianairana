@@ -4,6 +4,7 @@ import hoverOne from "../../img/HoverOne.png";
 import profileTwo from "../../img/ProfileTwo.png";
 import hoverTwo from "../../img/Hovertwo.png";
 import logoMobile from "../../img/ProfileMobile.png";
+import mobileProfile from "../../img/MobileProfile.png";
 
 export const ContainerHome = styled.div`
     width: 100%;
@@ -39,12 +40,14 @@ export const ContainerHome = styled.div`
         background-image: url(${hoverTwo});
     }
 
+
     @media (max-width: 600px) {
         display: flex;
         justify-content: center;
         width: 100%;
         height: 100vh;
         align-items: center;
+        flex-wrap: nowrap;
        
 
         .divImg {
@@ -53,7 +56,6 @@ export const ContainerHome = styled.div`
             height: 90%;
             max-height: 100%;
             display: flex;
-        
         }
 
         .imgOne, .imgTwo, .logo {
@@ -68,6 +70,14 @@ export const ContainerHome = styled.div`
             width: 100%;
             max-width: 100%;
         }
-    }
+        
+        @media (max-width: 415px) {
 
+            .img {
+                background-image: url(${mobileProfile}) ;
+                
+            }
+      
+    }
+    }
 `
