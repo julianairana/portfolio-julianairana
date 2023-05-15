@@ -15,6 +15,8 @@ export const ContainerHome = styled.div`
         height: 100%;
         justify-content: center;
         margin-top: 30px;
+        animation: logoAnimation 1.5s ease-in;
+        transform: 1.5s ease-in;
     }
 
     .imgOne {
@@ -22,8 +24,8 @@ export const ContainerHome = styled.div`
         background-image: url(${profileOne});
         background-repeat: no-repeat;
         transition: 600ms;
-        animation: animation 1.5s ease-in;
-        transform: 1.5s ease-in;
+        animation: animation 2s ease-in;
+        transform: 2s ease-in;
     }
 
     .imgOne:hover{
@@ -35,19 +37,13 @@ export const ContainerHome = styled.div`
         background-image: url(${profileTwo});
         background-repeat: no-repeat;
         transition: 600ms;
-        animation: animation2 1.5s ease-in;
-        transform: 1.5s ease-in;
+        animation: animation2 2s ease-in;
+        transform: 2s ease-in;
     }
 
     .imgTwo:hover{
         background-image: url(${hoverTwo});
     }
-
-    .logo {
-        animation: upAnimation 1.5s ease-in;
-        transform: 1.5s ease-in;
-    }
-
 
     @media (max-width: 600px) {
         display: flex;
@@ -72,6 +68,17 @@ export const ContainerHome = styled.div`
         
     }
 
+    @keyframes logoAnimation {
+    from {
+    opacity: 0;
+    transform: translateY(-70%);
+    }
+    to {
+    opacity: 1;
+    transform: translateY(0%);
+    }
+  }
+
     @keyframes animation {
     from {
       opacity: 0;
@@ -80,17 +87,6 @@ export const ContainerHome = styled.div`
     to {
       opacity: 1;
       transform: translateX(0%);
-    }
-  }
-
-    @keyframes upAnimation {
-    from {
-      opacity: 0;
-      transform: translateY(-70%);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0%);
     }
   }
 
