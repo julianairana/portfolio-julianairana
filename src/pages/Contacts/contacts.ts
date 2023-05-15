@@ -24,6 +24,8 @@ export const ContainerContacts = styled.div`
 
     img {
         width: 100px;
+        animation: animation 1.5s ease-in;
+        transform: 1.5s ease-in;
     }
 
     img:hover {
@@ -41,5 +43,16 @@ export const ContainerContacts = styled.div`
         }
 
     }
+
+    @keyframes animation {
+    from {
+      opacity: 0;
+      transform: translateY(-70%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 
 `

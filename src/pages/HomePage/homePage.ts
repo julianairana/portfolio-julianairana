@@ -22,6 +22,8 @@ export const ContainerHome = styled.div`
         background-image: url(${profileOne});
         background-repeat: no-repeat;
         transition: 600ms;
+        animation: animation 1.5s ease-in;
+        transform: 1.5s ease-in;
     }
 
     .imgOne:hover{
@@ -33,10 +35,17 @@ export const ContainerHome = styled.div`
         background-image: url(${profileTwo});
         background-repeat: no-repeat;
         transition: 600ms;
+        animation: animation2 1.5s ease-in;
+        transform: 1.5s ease-in;
     }
 
     .imgTwo:hover{
         background-image: url(${hoverTwo});
+    }
+
+    .logo {
+        animation: upAnimation 1.5s ease-in;
+        transform: 1.5s ease-in;
     }
 
 
@@ -48,7 +57,6 @@ export const ContainerHome = styled.div`
         align-items: center;
         flex-wrap: nowrap;
        
-
         .divImg {
             width: 100%;
             max-width: 50%;
@@ -62,13 +70,38 @@ export const ContainerHome = styled.div`
             background-image: url(${logoMobile});
         }
         
-        /* .img {
-            background-image: url(${logoMobile});
-            background-repeat: no-repeat ;
-            display: flex;
-            width: 100%;
-            max-width: 100%;
-        } */
-        
     }
+
+    @keyframes animation {
+    from {
+      opacity: 0;
+      transform: translateX(-70%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+
+    @keyframes upAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(-70%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+    @keyframes animation2 {
+    from {
+      opacity: 0;
+      transform: translateX(70%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
 `

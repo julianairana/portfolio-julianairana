@@ -26,8 +26,9 @@ export const ContainerProjects = styled.div`
         flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
+        animation: animation 1.5s ease-in;
+        transform: 1.5s ease-in;
     }
-
     
     img {
         width: 300px;
@@ -60,4 +61,15 @@ export const ContainerProjects = styled.div`
             gap: 30px;
         }
     }
+
+    @keyframes animation {
+    from {
+      opacity: 0;
+      transform: translateY(-70%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 `

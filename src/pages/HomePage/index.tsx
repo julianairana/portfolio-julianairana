@@ -15,6 +15,5 @@ export const HomePage = () => {
             </div>
         </ContainerHome>
     </>
-
     )
 }

@@ -18,11 +18,17 @@ export const Projects = () => {
                         <img src={hamburgueria} alt="" />
                         <h3>Hamburgueria</h3>
                         </Link>
+                        <Link to="https://github.com/julianairana/hamburgueria-2-julianairana" target="_blank">
+                            <h3>Repositório</h3>
+                        </Link>
                     </li>
                     <li>
                         <Link to="https://entrega-nu-kenzie-lovat.vercel.app/" target="_blank">
                         <img src={nuKenzie} alt="" />
                         <h3>Nu Kenzie</h3>
+                        </Link>
+                        <Link to="https://github.com/julianairana/nu-kenzie-julianairana" target="_blank">
+                            <h3>Repositório</h3>
                         </Link>
                     </li>
                     <li>
@@ -30,13 +36,13 @@ export const Projects = () => {
                         <img src={kenzieHub} alt="" />
                         <h3>Kenzie Hub</h3>
                         </Link>
+                        <Link to="https://github.com/julianairana/kenzie-hub-julianairana" target="_blank">
+                            <h3>Repositório</h3>
+                        </Link>
                     </li>
-                    
                 </ul>
-
             </div>
         </ContainerProjects>
     </>
-
     )
 }

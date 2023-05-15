@@ -19,6 +19,8 @@ export const ContainerAbout = styled.div`
     img {
         width: 300px;
         margin-top: 15px;
+        animation: animation 1.5s ease-in;
+        transform: 1.5s ease-in;
     }
 
     h1 {
@@ -31,19 +33,13 @@ export const ContainerAbout = styled.div`
         color: #979797;
     }
 
-    /* .divAbout {
-        border-top: 1px solid #2A9918;
-        margin-top: 20px;
-        display: flex;
-        align-items: center;
-        
-    } */
-
     p {
         width: 65%;
         margin-top: 20px;
         color: #ffff;
         text-align: center;
+        animation: animation 1.5s ease-in;
+        transform: 1.5s ease-in;
     }
 
     .divIcons {
@@ -68,5 +64,15 @@ export const ContainerAbout = styled.div`
         height: 70px;
     }
 
+    @keyframes animation {
+    from {
+      opacity: 0;
+      transform: translateY(-70%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
 
 `
