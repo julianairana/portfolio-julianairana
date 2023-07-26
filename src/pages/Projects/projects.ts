@@ -5,7 +5,7 @@ export const ContainerProjects = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
+    margin-top: 60px;
     flex-direction: column;
 
     h1 {
@@ -19,7 +19,20 @@ export const ContainerProjects = styled.div`
         margin-top: 80px;
         display: flex;
         justify-content: center;
+        overflow: auto;
+        max-height: 400px;
     }
+    .divProjects::-webkit-scrollbar {
+        width: 10px; 
+        }
+
+    .divProjects::-webkit-scrollbar-thumb {
+        background-color: #888; 
+        }
+
+    .divProjects::-webkit-scrollbar-thumb:hover {
+        background-color: #555;
+        }
 
     ul {
         display: flex;
@@ -28,8 +41,12 @@ export const ContainerProjects = styled.div`
         gap: 20px;
         animation: animation 1.5s ease-in;
         transform: 1.5s ease-in;
+        width: 65%;
+        flex-direction: row;
+        margin-top: 10px;
+        
     }
-    
+
     img {
         width: 300px;
         height: 190px;
@@ -57,7 +74,7 @@ export const ContainerProjects = styled.div`
 
         ul {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 30px;
         }
     }

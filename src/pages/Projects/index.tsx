@@ -1,5 +1,6 @@
 import { Header } from "../../componentes/Header";
 import { ContainerProjects } from "./projects";
+import peopleContact from "../../img/PeopleContact.png";
 import hamburgueria from "../../img/Hamburgueria.jpeg";
 import nuKenzie from "../../img/NuKenzie.jpeg";
 import kenzieHub from "../../img/KenzieHub.jpeg";
@@ -13,6 +14,15 @@ export const Projects = () => {
             <h1>Conheça os meus Projetos...</h1>
             <div className="divProjects">
                 <ul>
+                <li>
+                        <Link to="https://front-desafio-full-julianairana.vercel.app/" target="_blank">
+                        <img src={peopleContact} alt="" />
+                        <h3>People Contact</h3>
+                        </Link>
+                        <Link to="https://github.com/julianairana/front-desafio-full-julianairana" target="_blank">
+                            <h3>Repositório</h3>
+                        </Link>
+                    </li>
                     <li>
                         <Link to="https://hamburgueria-2-julianairana.vercel.app/" target="_blank">
                         <img src={hamburgueria} alt="" />
