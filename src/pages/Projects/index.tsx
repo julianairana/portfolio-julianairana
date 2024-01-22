@@ -4,6 +4,7 @@ import peopleContact from "../../img/PeopleContact.png";
 import hamburgueria from "../../img/Hamburgueria.jpeg";
 import nuKenzie from "../../img/NuKenzie.jpeg";
 import kenzieHub from "../../img/KenzieHub.jpeg";
+import craft from "../../img/craft.jpg";
 import { Link } from "react-router-dom";
 
 export const Projects = () => {
@@ -20,6 +21,15 @@ export const Projects = () => {
                         <h3>People Contact</h3>
                         </Link>
                         <Link to="https://github.com/julianairana/front-desafio-full-julianairana" target="_blank">
+                            <h3>Repositório</h3>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="https://craft-beers.vercel.app/" target="_blank">
+                        <img src={craft} alt="" />
+                        <h3>Craft Beers</h3>
+                        </Link>
+                        <Link to="https://github.com/julianairana/teste-full-stack-julianairana/tree/main" target="_blank">
                             <h3>Repositório</h3>
                         </Link>
                     </li>
